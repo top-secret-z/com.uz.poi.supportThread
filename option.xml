@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
+	<import>
+		<categories>
+			<category name="poi.supportThread">
+				<parent>poi</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="poi_support_thread_single_board">
+				<categoryname>poi.supportThread</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>poi_support_thread_board_id,poi_support_thread_categories</enableoptions>
+				<showorder>1</showorder>
+			</option>
+			<option name="poi_support_thread_board_id">
+				<categoryname>poi.supportThread</categoryname>
+				<optiontype>WBBBoardSelect</optiontype>
+				<showorder>2</showorder>
+			</option>
+			<option name="poi_support_thread_categories">
+				<categoryname>poi.supportThread</categoryname>
+				<optiontype>poiCategoryMultiSelect</optiontype>
+				<showorder>3</showorder>
+			</option>
+		</options>
+	</import>
+</data>

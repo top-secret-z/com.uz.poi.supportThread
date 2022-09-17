@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
+	<import>
+		<templatelistener name="poiBoardSelection">
+			<environment>admin</environment>
+			<templatename>categoryAdd</templatename>
+			<eventname>dataFields</eventname>
+			<templatecode><![CDATA[{include file='__poiBoardSelection' application='poi'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="poiThreadButton">
+			<environment>user</environment>
+			<templatename>poi</templatename>
+			<eventname>poiBoxes</eventname>
+			<templatecode><![CDATA[{include file='__poiThreadButton' application='poi'}]]></templatecode>
+		</templatelistener>
+	</import>
+</data>
