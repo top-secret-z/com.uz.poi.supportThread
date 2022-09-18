@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en">
-	<category name="poi.poi">
-		<item name="poi.poi.button.jumpToSupportThread"><![CDATA[Support Thread]]></item>
-		<item name="poi.poi.supportThread.boardID"><![CDATA[Forum]]></item>
-		<item name="poi.poi.supportThread.boardID.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
-		<item name="poi.poi.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}reply{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
-		<item name="poi.poi.supportThread.message"><![CDATA[<p>{@$poi->username} added a new POI:<br>[poi]{@$poi->poiID}[/poi]</p>
+    <category name="poi.poi">
+        <item name="poi.poi.button.jumpToSupportThread"><![CDATA[Support Thread]]></item>
+        <item name="poi.poi.supportThread.boardID"><![CDATA[Forum]]></item>
+        <item name="poi.poi.supportThread.boardID.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
+        <item name="poi.poi.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}reply{else}replies{/if}{if $supportThread->replies > 0}, last: {@$supportThread->lastPostTime|time}{/if}]]></item>
+        <item name="poi.poi.supportThread.message"><![CDATA[<p>{@$poi->username} added a new POI:<br>[poi]{@$poi->poiID}[/poi]</p>
 <woltlab-quote>{@$poi->getMessage()}</woltlab-quote>]]></item>
-		<item name="poi.poi.supportThread.subject"><![CDATA[{@$poi->getSubject()}]]></item>
-	</category>
-	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.category.poi.supportThread"><![CDATA[Support Thread]]></item>
-		<item name="wcf.acp.option.category.poi.supportThread.description"><![CDATA[Support and discussion threads are automatically created for each new POI in the selected forum.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_board_id"><![CDATA[Forum]]></item>
-		<item name="wcf.acp.option.poi_support_thread_board_id.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_categories"><![CDATA[Categories]]></item>
-		<item name="wcf.acp.option.poi_support_thread_categories.description"><![CDATA[Create support and discussion threads for POIs in the selected categories only.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_single_board"><![CDATA[Single forum for all categories]]></item>
-		<item name="wcf.acp.option.poi_support_thread_single_board.description"><![CDATA[Support and discussion threads will be created in the specified forum, regardless of the selected categories. Disabling this feature allows you to edit the desired categories, and assign a specific forum to them.]]></item>
-	</category>
+        <item name="poi.poi.supportThread.subject"><![CDATA[{@$poi->getSubject()}]]></item>
+    </category>
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.poi.supportThread"><![CDATA[Support Thread]]></item>
+        <item name="wcf.acp.option.category.poi.supportThread.description"><![CDATA[Support and discussion threads are automatically created for each new POI in the selected forum.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_board_id"><![CDATA[Forum]]></item>
+        <item name="wcf.acp.option.poi_support_thread_board_id.description"><![CDATA[Support and discussion threads will be created in the selected forum.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_categories"><![CDATA[Categories]]></item>
+        <item name="wcf.acp.option.poi_support_thread_categories.description"><![CDATA[Create support and discussion threads for POIs in the selected categories only.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_single_board"><![CDATA[Single forum for all categories]]></item>
+        <item name="wcf.acp.option.poi_support_thread_single_board.description"><![CDATA[Support and discussion threads will be created in the specified forum, regardless of the selected categories. Disabling this feature allows you to edit the desired categories, and assign a specific forum to them.]]></item>
+    </category>
 </language>

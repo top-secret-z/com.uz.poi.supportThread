@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
-	<import>
-		<eventlistener name="poiCategoryAddSupportThread">
-			<eventclassname>poi\acp\form\CategoryAddForm</eventclassname>
-			<eventname>assignVariables,save,validate</eventname>
-			<listenerclassname>poi\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="poiCategoryEditSupportThread">
-			<eventclassname>poi\acp\form\CategoryEditForm</eventclassname>
-			<eventname>assignVariables,readData,save,validate</eventname>
-			<listenerclassname>poi\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<eventlistener name="poiSupportThread">
-			<eventclassname>poi\page\PoiPage</eventclassname>
-			<eventname>assignVariables</eventname>
-			<listenerclassname>poi\system\event\listener\PoiPageSupportThreadListener</listenerclassname>
-		</eventlistener>
-		<eventlistener name="poiSupportThreadAction">
-			<eventclassname>poi\data\poi\PoiAction</eventclassname>
-			<eventname>finalizeAction</eventname>
-			<listenerclassname>poi\system\event\listener\PoiActionSupportThreadListener</listenerclassname>
-		</eventlistener>
-	</import>
+    <import>
+        <eventlistener name="poiCategoryAddSupportThread">
+            <eventclassname>poi\acp\form\CategoryAddForm</eventclassname>
+            <eventname>assignVariables,save,validate</eventname>
+            <listenerclassname>poi\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="poiCategoryEditSupportThread">
+            <eventclassname>poi\acp\form\CategoryEditForm</eventclassname>
+            <eventname>assignVariables,readData,save,validate</eventname>
+            <listenerclassname>poi\system\event\listener\CategorySupportThreadBoardListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <eventlistener name="poiSupportThread">
+            <eventclassname>poi\page\PoiPage</eventclassname>
+            <eventname>assignVariables</eventname>
+            <listenerclassname>poi\system\event\listener\PoiPageSupportThreadListener</listenerclassname>
+        </eventlistener>
+        <eventlistener name="poiSupportThreadAction">
+            <eventclassname>poi\data\poi\PoiAction</eventclassname>
+            <eventname>finalizeAction</eventname>
+            <listenerclassname>poi\system\event\listener\PoiActionSupportThreadListener</listenerclassname>
+        </eventlistener>
+    </import>
 </data>
