@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de">
-	<category name="poi.poi">
-		<item name="poi.poi.button.jumpToSupportThread"><![CDATA[Support-Thema]]></item>
-		<item name="poi.poi.supportThread.boardID"><![CDATA[Forum]]></item>
-		<item name="poi.poi.supportThread.boardID.description"><![CDATA[Im ausgewählten Forum werden die Support- bzw. Diskussions-Themen angelegt.]]></item>
-		<item name="poi.poi.supportThread.info"><![CDATA[{#$supportThread->replies} Antwort{if $supportThread->replies != 1}en{/if}{if $supportThread->replies > 0}, zuletzt: {@$supportThread->lastPostTime|time}{/if}]]></item>
-		<item name="poi.poi.supportThread.message"><![CDATA[<p>{@$poi->username} hat einen neuen POI hinzugefügt:<br>[poi]{@$poi->poiID}[/poi]</p>
+    <category name="poi.poi">
+        <item name="poi.poi.button.jumpToSupportThread"><![CDATA[Support-Thema]]></item>
+        <item name="poi.poi.supportThread.boardID"><![CDATA[Forum]]></item>
+        <item name="poi.poi.supportThread.boardID.description"><![CDATA[Im ausgewählten Forum werden die Support- bzw. Diskussions-Themen angelegt.]]></item>
+        <item name="poi.poi.supportThread.info"><![CDATA[{#$supportThread->replies} Antwort{if $supportThread->replies != 1}en{/if}{if $supportThread->replies > 0}, zuletzt: {@$supportThread->lastPostTime|time}{/if}]]></item>
+        <item name="poi.poi.supportThread.message"><![CDATA[<p>{@$poi->username} hat einen neuen POI hinzugefügt:<br>[poi]{@$poi->poiID}[/poi]</p>
 <woltlab-quote>{@$poi->getMessage()}</woltlab-quote>]]></item>
-		<item name="poi.poi.supportThread.subject"><![CDATA[{@$poi->getSubject()}]]></item>
-	</category>
-	<category name="wcf.acp.option">
-		<item name="wcf.acp.option.category.poi.supportThread"><![CDATA[Support-Thema]]></item>
-		<item name="wcf.acp.option.category.poi.supportThread.description"><![CDATA[Generiert automatisch für jeden neu erstellten POI ein Support- bzw. Diskussions-Thema im ausgewählten Forum.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_board_id"><![CDATA[Forum]]></item>
-		<item name="wcf.acp.option.poi_support_thread_board_id.description"><![CDATA[Im ausgewählten Forum werden die Support-Themen angelegt.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_categories"><![CDATA[Kategorien]]></item>
-		<item name="wcf.acp.option.poi_support_thread_categories.description"><![CDATA[Ausschließlich für POIs der gewählten Kategorien wird ein Support- bzw. Diskussions-Thema erstellt.]]></item>
-		<item name="wcf.acp.option.poi_support_thread_single_board"><![CDATA[Einheitliches Forum für alle Kategorien verwenden]]></item>
-		<item name="wcf.acp.option.poi_support_thread_single_board.description"><![CDATA[Themen werden für alle Kategorien im selben Forum angelegt. Alternativ {if LANGUAGE_USE_INFORMAL_VARIANT}kannst du{else}können Sie{/if} diese Option deaktivieren und die gewünschten Kategorien bearbeiten, um diesen ein individuelles Forum zuzuweisen.]]></item>
-	</category>
+        <item name="poi.poi.supportThread.subject"><![CDATA[{@$poi->getSubject()}]]></item>
+    </category>
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.category.poi.supportThread"><![CDATA[Support-Thema]]></item>
+        <item name="wcf.acp.option.category.poi.supportThread.description"><![CDATA[Generiert automatisch für jeden neu erstellten POI ein Support- bzw. Diskussions-Thema im ausgewählten Forum.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_board_id"><![CDATA[Forum]]></item>
+        <item name="wcf.acp.option.poi_support_thread_board_id.description"><![CDATA[Im ausgewählten Forum werden die Support-Themen angelegt.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_categories"><![CDATA[Kategorien]]></item>
+        <item name="wcf.acp.option.poi_support_thread_categories.description"><![CDATA[Ausschließlich für POIs der gewählten Kategorien wird ein Support- bzw. Diskussions-Thema erstellt.]]></item>
+        <item name="wcf.acp.option.poi_support_thread_single_board"><![CDATA[Einheitliches Forum für alle Kategorien verwenden]]></item>
+        <item name="wcf.acp.option.poi_support_thread_single_board.description"><![CDATA[Themen werden für alle Kategorien im selben Forum angelegt. Alternativ {if LANGUAGE_USE_INFORMAL_VARIANT}kannst du{else}können Sie{/if} diese Option deaktivieren und die gewünschten Kategorien bearbeiten, um diesen ein individuelles Forum zuzuweisen.]]></item>
+    </category>
 </language>
